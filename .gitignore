@@ -12,3 +12,8 @@ target/
 
 # logs
 *.log
+
+
+# ignore provided archives and large files
+xml.zip
+*.zip
