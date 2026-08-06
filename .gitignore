@@ -1,0 +1,19 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# macOS
+.DS_Store
+
+# logs
+*.log
+
+
+# ignore provided archives and large files
+xml.zip
+*.zip
