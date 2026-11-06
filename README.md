@@ -1,12 +1,37 @@
-# adelean-java-assessment
+# Java XML to Elasticsearch Indexer
 
-A small Java tool that **extracts** `xml.zip`, **stream-parses** XML documents using constant memory, and **bulk-indexes** them into a single Elasticsearch 7 index.
+A Java application that extracts XML files from a ZIP archive, stream-parses large XML documents with low memory usage, and bulk-indexes product data into Elasticsearch.
+
+The project demonstrates efficient processing of large datasets using streaming XML parsing instead of loading complete documents into memory.
+
+## Features
+
+- Extracts XML files from ZIP archives
+- Stream-parses XML documents for memory-efficient processing
+- Processes product information such as SKU, brand, and description
+- Bulk-indexes parsed documents into Elasticsearch
+- Supports configurable input paths, temporary directories, index names, and Elasticsearch hosts
+- Packaged as an executable shaded JAR
+
+## Tech Stack
+
+- Java 11
+- Maven
+- Elasticsearch 7.4.1
+- XML streaming
+- Elasticsearch Bulk API
 
 ## Prerequisites
 
-- **Elasticsearch 7.4.1** running and accessible (for example, `localhost:9200`)
-- **Java 11**
-- **Maven**
+Make sure the following are installed and available:
+
+- Java 11
+- Maven
+- Elasticsearch 7.4.1
+
+Elasticsearch should be running and accessible, for example:
+
+`localhost:9200`
 
 ## Build
 
@@ -94,5 +119,3 @@ grep -i "Parsed product sku" /tmp/adelean-run.log || true
 ```
 
 ## Thank You
-
-Thank you for reviewing this assessment. I appreciate your time and consideration.
